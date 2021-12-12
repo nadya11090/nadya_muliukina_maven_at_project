@@ -28,7 +28,7 @@ public class TooltipTest {
 
     @Test
 
-    public void tooltip(){
+    public void tooltipCurrency(){
 
         WebElement element = driver.findElement(By.xpath("//button[@data-modal-aria-label='Выберите валюту']"));
 
@@ -38,12 +38,20 @@ public class TooltipTest {
 
         Assert.assertEquals("Incorrect text Tooltip Currency ","Выберите валюту" , driver.findElement(By.xpath("//div[@class= 'bui-tooltip__content']")).getText());
 
-        element = driver.findElement(By.xpath("//div[@class='bui-avatar bui-avatar--small']"));
 
-        actions.moveToElement(element);
+    }
+
+    @Test
+    public void tooltipLanguage() {
+
+        WebElement element1 = driver.findElement(By.xpath("//div[@class='bui-avatar bui-avatar--small']"));
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element1);
         actions.perform();
 
         Assert.assertEquals("Incorrect text Tooltip Language ", "Выберите язык", driver.findElement(By.xpath("//div[@class= 'bui-tooltip__content']")).getText());
+
+    }
     }
 
-}
