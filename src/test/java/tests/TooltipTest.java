@@ -1,5 +1,6 @@
 package tests;
 
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -19,11 +20,11 @@ public class TooltipTest {
         driver.navigate().to("https://booking.com");
     }
 
-   // @After
-    //public void after() {
-      // driver.close();
-      // driver.quit();
-    //}
+    @After
+    public void after() {
+      driver.close();
+      driver.quit();
+    }
 
     @Test
 

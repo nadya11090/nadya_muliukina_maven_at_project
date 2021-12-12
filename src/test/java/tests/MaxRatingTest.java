@@ -24,9 +24,9 @@ public class MaxRatingTest extends BookingSteps {
         WebElement webElement = new WebDriverWait(driver, 2000).until(
                 ExpectedConditions.elementToBeClickable (By.xpath("//div[@data-testid='property-card'][1]//div[@aria-label='Оценка 10']")));
 
-        String maxPriceTextRating = webElement.getText();
-        int maxPriceNumberRating = Integer.parseInt(maxPriceTextRating.replaceAll("\\D+", ""));
+        String maxPriceRating = webElement.getText();
+        int maxPriceNumber = Integer.parseInt(maxPriceRating.replaceAll("\\D+", ""));
 
-        Assert.assertTrue("The highest hotel rating is incorrect ", maxPriceNumberRating >= 9);
+        Assert.assertTrue("The highest hotel rating is incorrect ", maxPriceNumber >= 9);
     }
 }

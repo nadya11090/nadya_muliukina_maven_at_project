@@ -19,13 +19,13 @@ public class ExistingHotelTest extends BookingSteps {
     driver.findElement(By.xpath(String.format("//td[@data-date='%s']", this.getDateString(7)) )).click();
     driver.findElement(By.xpath(page.checkPricesButton)).click();
 
-    WebElement webElement = new WebDriverWait(driver, 1000).until(
+    WebElement element = new WebDriverWait(driver, 1000).until(
             ExpectedConditions.elementToBeClickable (By.xpath("//a[contains(text(), 'сначала самая низкая')]")));
-    webElement.click();
+    element.click();
 
-    WebElement firstElement = driver.findElement(By.xpath("//div[@data-testid='property-card'][1]"));
+    WebElement element1 = driver.findElement(By.xpath("//div[@data-testid='property-card'][1]"));
 
-    Assert.assertTrue(firstElement.isDisplayed());
+    Assert.assertTrue(element1.isDisplayed());
 }
 }
 
