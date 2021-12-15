@@ -1,6 +1,6 @@
 package pages;
 
-public class BookingPage {
+public class PreviousBookingPage {
 
     /** HomePage **/
 

@@ -6,9 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import steps.BookingSteps;
+import steps.PreviousBookingSteps;
 
-public class MaxRatingTest extends BookingSteps {
+public class MaxRatingTest extends PreviousBookingSteps {
 
     @Test
     public void findMaxRaiting(){

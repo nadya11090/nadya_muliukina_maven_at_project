@@ -1,22 +1,19 @@
 package tests;
 
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
-import steps.BookingSteps;
+import steps.PreviousBookingSteps;
 
 import java.time.Duration;
 import java.util.Arrays;
 import java.util.NoSuchElementException;
 
 
-public class BookingParisTest extends BookingSteps {
+public class BookingParisTest extends PreviousBookingSteps {
 
     @Test
     public void dateCheckTest() throws InterruptedException {
