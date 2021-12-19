@@ -4,7 +4,6 @@ import driver.Driver;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
 import pages.booking.RegisterUserPage;
 
 public class RegisterUserTest extends RegisterUserPage {
@@ -13,6 +12,7 @@ public class RegisterUserTest extends RegisterUserPage {
     WebDriver driver = Driver.getDriver();
 
     @Test
+
     public void registerTest() throws InterruptedException {
         driver.manage().window().maximize();
         registerUserPage.openStartPage();
@@ -20,7 +20,7 @@ public class RegisterUserTest extends RegisterUserPage {
         registerUserPage.enterEmail("nhiuhy@trashmail.fr");
         registerUserPage.clickContinueButton();
         Thread.sleep(500);
-        registerUserPage.enterPassword("NadyaMuliukina1");
+        registerUserPage.enterPassword("12345678Qq");
         registerUserPage.clickAndHold();
 
 
