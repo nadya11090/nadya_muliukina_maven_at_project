@@ -42,8 +42,8 @@ public class ChuckNorrisPage {
         return url;
     }
 
-    public ValidatableResponse jokeNameLastname(String fistName, String lastName) {
-        return extractableResponse(urlSetter(fistName, lastName));
+    public ValidatableResponse jokeNameLastname(String firstName, String lastName) {
+        return extractableResponse(urlSetter(firstName, lastName));
     }
 
     public ValidatableResponse randomJoke() {
